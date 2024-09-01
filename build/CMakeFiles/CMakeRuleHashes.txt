@@ -1,0 +1,12 @@
+# Hashes of file build rules.
+be6b995ae524dea5750a4c793c0aa790 CMakeFiles/disk
+0440cbcbdba1782a0bb308b03cb8f711 CMakeFiles/qemu
+93adecc2df3b38f78fd453bf0b922a7c kernel/CMakeFiles/kernel
+e55f72563652f8453cb4e6751866dca8 kernel/apu_boot.s
+09a6364e278f46da50b4d2faf1105316 kernel/entry.s
+4a35417c7c9234b27a0feb8ef8885b84 kernel/head.s
+2800a6c94f24776e4f2cb33ecbb5de45 kernel/start.o
+9e98dfa0fa2c89c2dcde57e3f65fc491 output/osImage
+8900aca18f53acb0fd6ea2591167667d output/userImage
+93adecc2df3b38f78fd453bf0b922a7c user/CMakeFiles/user
+b282bb708ea7c8df227a11a78865021f user/init.o
