@@ -5,6 +5,7 @@ add_definitions(-DDEBUG)
 
 set(DISK_PART "")
 
+set(OS_DIR ${PROJECT_SOURCE_DIR})
 set(KERNEL_DIR ${PROJECT_SOURCE_DIR}/kernel)
 set(USER_DIR ${PROJECT_SOURCE_DIR}/user)
 set(UEFI_DIR ${PROJECT_SOURCE_DIR}/UEFI)
@@ -44,5 +45,8 @@ add_custom_target(
 add_custom_target(
     qemu
 	COMMAND sudo qemu-system-x86_64 -bios ${BIOS} -hda ${DISK} -cpu host -enable-kvm -m 4096 -smp 4 -netdev tap,id=mytap,ifname=tap0,script=no,downscript=no -device e1000,netdev=mytap -display vnc=:0 -vga virtio -monitor stdio
+    
+    DEPENDS disk
+
     WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
 )

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "global.h": "c",
+        "memory.h": "c",
+        "string.h": "c"
+    }
+}
