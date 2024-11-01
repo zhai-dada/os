@@ -1,7 +1,20 @@
 {
     "files.associations": {
+        "*.lds": "gas",
         "global.h": "c",
         "memory.h": "c",
-        "string.h": "c"
-    }
+        "string.h": "c",
+        "unistd.h": "c",
+        "unistd_64.h": "c",
+        "syscall.h": "c",
+        "mman.h": "c",
+        "xmmintrin.h": "c",
+        "random": "c",
+        "math.h": "c",
+        "stdio.h": "c",
+        "atomic": "c",
+        "libm_util.h": "c",
+        "libm.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

@@ -60,7 +60,9 @@ void read_map(FILE *filp)
 int symbol_valid(struct symbol_entry *sym_entry)
 {
     if ((sym_entry->address < _text || sym_entry->address > _etext))
+    {
         return 0;
+    }
     return 1;
 }
 
